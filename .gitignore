@@ -1,0 +1,6 @@
+node_modules/
+.vercel/
+*.log
+venue_vista.sqlite-shm
+venue_vista.sqlite-wal
+.DS_Store

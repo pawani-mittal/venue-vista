@@ -1,0 +1,24 @@
+{
+  "name": "venue-vista",
+  "version": "1.0.0",
+  "description": "Venue Vista: Event pro ticketing and venue management with interactive seating charts, ticket sales, gate scanner, and sales analytics.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "node --no-warnings --watch server.js",
+    "test": "node --no-warnings tests/test-api.js",
+    "seed": "node --no-warnings -e \"require('./db').seedDatabase(true)\""
+  },
+  "keywords": [
+    "ticketing",
+    "venue-management",
+    "seating-charts",
+    "box-office",
+    "media-entertainment",
+    "sales-analytics",
+    "qr-access-control"
+  ],
+  "author": "Venue Vista Engineering",
+  "license": "MIT"
+}

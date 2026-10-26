@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Venue Vista Server",
+      "type": "shell",
+      "command": "node --no-warnings server.js",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Run Automated Tests",
+      "type": "shell",
+      "command": "node --no-warnings tests/test-api.js",
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "Reset Demo Data",
+      "type": "shell",
+      "command": "node --no-warnings -e \"require('./db').seedDatabase(true)\"",
+      "problemMatcher": []
+    }
+  ]
+}
